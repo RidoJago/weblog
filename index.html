@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #343a40;
+        }
+        table {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            vertical-align: middle;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .btn-outline-primary {
+            border-color: #6c757d;
+            color: #6c757d;
+        }
+        .btn-outline-primary:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educations">Educations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#findme">Find Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <img src="your-photo.jpg" alt="Profile Photo" class="img-thumbnail my-3" style="width: 150px;">
+            <h3>Ridho Risky Adhi Nugroho</h3>
+            <p>XI 8 RPL</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educations Section -->
+    <section id="educations" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Educations</h2>
+            <h4>Pengalaman Eskul</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Tahun</th>
+                        <th>Peran/Posisi</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022</td>
+                        <td>Ketua OSIS</td>
+                        <td>Mengorganisasi kegiatan sekolah</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 class="mt-4">Riwayat Pendidikan</h4>
+            <table class="table table-striped">
+                <thead class="table-success">
+                    <tr>
+                        <th>Nama Sekolah</th>
+                        <th>Tahun</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SDN Cengkareng Timur 15 Pagi</td>
+                        <td>2014-2020</td>
+                        <td>Belajar menggunakan Kurikulum 13</td>
+                    </tr>
+                    <tr>
+                        <td>SMPN 186 Jakarta</td>
+                        <td>2021-2023</td>
+                        <td>Belajar menggunakan Kurikulum 13</td>
+                    </tr>
+                    <tr>
+                        <td>SMK Telkom</td>
+                        <td>2023-2025</td>
+                        <td>Jurusan Rekayasa Perangkat Lunak</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="findme" class="py-5">
+        <div class="container text-center">
+            <h2>Find Me</h2>
+            <p>
+                <a href="mailto:rdongrh@gmail.com" target="_blank" class="text-decoration-none">
+                    <img src="data:image/png;base64,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" alt="Gmail" style="width: 30px; margin-right: 10px;">
+                  
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/6285692282504" target="_blank" class="text-decoration-none">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; margin-right: 10px;">
+                   
+                </a>
+            </p>
+            <div>
+                <a href="https://www.instagram.com/rdongrh" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="w" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.tiktok.com/@rdongrh" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Me Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ridho Risky. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
